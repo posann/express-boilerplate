@@ -16,7 +16,6 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-
-
 db.presensis = require("./presensi.model")(sequelize, Sequelize);
+db.mahasantris = require("./mahasantri.model")(sequelize, Sequelize);
 module.exports = db;
